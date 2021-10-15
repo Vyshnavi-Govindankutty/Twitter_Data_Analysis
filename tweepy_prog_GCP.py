@@ -81,13 +81,6 @@ class Listener(Stream):
         
         
 
-consumer_key='JoFrV9rnPOo48ChmI7VqxVwE0'
-consumer_secret='y045fLJWbBkYwTFKhLE3zbKemdlqyQR8jb09cI1QrSyLFMxYfM'
-access_token='4259095165-BpxrRtft6mwkQxunBDoMpwbVBowdVss7or7BpFu'
-access_token_secret='PMv41iQyNdczIuaQpeJmyFicqMBUuQWKySttE4Uh40fl4'
-auth = tw.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-
 streaming_data = Listener(consumer_key,consumer_secret,access_token,access_token_secret)
 streaming_data.filter(track=['$AAPL','$GOOGL','$GOOG','$MSFT','$AMZN','$FB','$TSLA','$BRK.B','$NVDA','$JPM','SP500','$SPY','$JNJ','$JPM','$UNH','$V','$PG','$HD','$PYPL','$DIS','$MA','$ADBE','$BAC','$PFE','$CMCSA','$CRM','$CSCO','$NFLX','$VZ','$ABT','$XOM','$KO','$PEP','$TMO','$LLY','$NTC','$NKE','$ACN','$ABBV',\
 '$WMT','$DHR','$COST','$MRK','$T','$WFC','$AVGO','$CVX','$MCD','$MDT','$TXN','$NEE','$LIN','$ORCL','$QCOM','$HON','$PM','$BMY','$UNP','$INTU','$MS','$C','$LOW','$UPS','$SBUX','$GS','$AMT',\
